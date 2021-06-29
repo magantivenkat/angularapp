@@ -1,0 +1,11 @@
+<div>
+  <select formControlName="timeZone" class="form-control" (change)="changeTimeZone($event)"> 
+    <option [value]="null">Select TimeZone</option>
+    <option *ngFor="let web of timezones">{{web.zoneName}}</option>   
+</select>
+
+<h1>{{times}}</h1>
+
+
+
+</div>
